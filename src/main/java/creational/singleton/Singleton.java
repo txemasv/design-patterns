@@ -1,4 +1,4 @@
-package creational;
+package creational.singleton;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,6 +7,10 @@ public class Singleton {
 
     private static File instance;
 
+    /**
+     * Thread safe version for singleton
+     * @return unique instance
+     */
     public synchronized static File getInstance() {
         if (instance == null) {
             try {
