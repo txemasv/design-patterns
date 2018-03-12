@@ -11,6 +11,6 @@ public class Woman implements Human {
 
     @Override
     public String getGenes() {
-        return Character.toString(genA) + Character.toString(genB);
+        return (Character.toString(genA) + Character.toString(genB)).toUpperCase();
     }
 }

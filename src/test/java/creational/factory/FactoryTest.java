@@ -11,7 +11,7 @@ public class FactoryTest {
         Human human = Factory.createHuman(Human.MAN);
         assert human != null;
         String genes = human.getGenes();
-        assertEquals(genes, "xx");
+        assertEquals(genes, "XX");
     }
 
     @Test
@@ -19,6 +19,6 @@ public class FactoryTest {
         Human human = Factory.createHuman(Human.WOMAN);
         assert human != null;
         String genes = human.getGenes();
-        assertEquals(genes, "xy");
+        assertEquals(genes, "XY");
     }
 }

@@ -9,6 +9,6 @@ public class Man implements Human {
 
     @Override
     public String getGenes() {
-        return Character.toString(gen) + Character.toString(gen);
+        return (Character.toString(gen) + Character.toString(gen)).toUpperCase();
     }
 }
