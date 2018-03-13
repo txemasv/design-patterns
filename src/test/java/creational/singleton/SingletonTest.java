@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.io.File;
 
-import static org.junit.Assert.assertEquals;
+import static junit.framework.TestCase.assertSame;
 
 public class SingletonTest {
 
@@ -12,7 +12,7 @@ public class SingletonTest {
     public void getInstance_Should_Return_EveryTime_The_Same_Instance() {
         File file1 = Singleton.getInstance();
         File file2 = Singleton.getInstance();
-        assertEquals(file1, file2);
+        assertSame(file1, file2);
     }
 
 }

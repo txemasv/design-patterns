@@ -17,8 +17,8 @@ public class StrategyTest {
 
     @Before
     public void setUp() {
-        clock = Clock.systemDefaultZone();
-        LocalDateTime now = LocalDateTime.now(clock);
+        LocalDateTime now = LocalDateTime.now();
+        clock = Clock.fixed(now.atZone(Clock.systemDefaultZone().getZone()).toInstant(), Clock.systemDefaultZone().getZone());
         date = now.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
     }
