@@ -7,7 +7,7 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
-public class FactoryTest {
+public class PrototypeTest {
 
     @Test
     public void createRoom_Should_Create_A_Prototyped_Room() throws CloneNotSupportedException {
