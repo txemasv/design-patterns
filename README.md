@@ -10,6 +10,7 @@ The project is a personal library where I'm including some important Java Design
 - Builder
 - Factory
 ### Structural
+- Facade
 ### Behavioral
 - State
 - Strategy
