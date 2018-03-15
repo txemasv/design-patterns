@@ -18,7 +18,8 @@ The project is a personal library where I'm including some important Java Design
 | Behavioral Patterns                                 | UnitTest                                            |
 | --------------------------------------------------- | ---------------------------------------------------:|
 | [State](src/main/java/behavioral/state)             | [StateTest](src/test/java/behavioral/state)         |
-| [Observer](src/main/java/behavioral/observer)       | [ObserverTest](src/test/java/behavioral/observer)       |
+| [Memento](src/main/java/behavioral/memento)         | [MementoTest](src/test/java/behavioral/memento)     |
+| [Observer](src/main/java/behavioral/observer)       | [ObserverTest](src/test/java/behavioral/observer)   |
 | [Strategy](src/main/java/behavioral/strategy)       | [StrategyTest](src/test/java/behavioral/strategy)   |
 | [Template](src/main/java/behavioral/template)       | [TemplateTest](src/test/java/behavioral/template)   |
 | [ChainOfResponsibility](src/main/java/behavioral/chain_of_responsibility)       | [CoRTest](src/test/java/behavioral/chain_of_responsibility)   |
