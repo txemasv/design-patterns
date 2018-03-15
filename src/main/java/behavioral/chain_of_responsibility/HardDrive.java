@@ -19,13 +19,12 @@ public class HardDrive implements ChainItem {
 
     @Override
     public void play(String isan) {
-        log.player("HardDrive");
+        log.output("HardDrive selected");
         Movie movie = findMovie(isan);
         if(movie != null) {
             movie.play();
         } else {
-            log.player(null);
-            System.out.println("The Movie with ISAN '" + isan + "' does not exists in any Movie player.");
+            log.output("The Movie with ISAN '" + isan + "' does not exists in any Movie player");
         }
     }
 

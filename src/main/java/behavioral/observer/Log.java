@@ -1,4 +1,4 @@
-package behavioral.chain_of_responsibility;
+package behavioral.observer;
 
 public class Log {
     private String message;

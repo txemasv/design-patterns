@@ -65,7 +65,7 @@ public class ChainOfResponsibilityTest {
 
         netflix.play("NOT-EXISTENT-ISAN");
 
-        assertEquals("", log.getMessage());
+        assertEquals("The Movie with ISAN 'NOT-EXISTENT-ISAN' does not exists in any Movie player", log.getMessage());
     }
 
 }

@@ -19,7 +19,7 @@ public class AppleTv implements ChainItem {
 
     @Override
     public void play(String isan) {
-        log.player("AppleTv");
+        log.output("AppleTv selected");
         Movie movie = findMovie(isan);
         if(movie != null) {
             movie.play();

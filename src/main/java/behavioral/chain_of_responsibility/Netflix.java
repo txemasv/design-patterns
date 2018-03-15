@@ -19,7 +19,7 @@ public class Netflix implements ChainItem {
 
     @Override
     public void play(String isan) {
-        log.player("Netflix");
+        log.output("Netflix selected");
         Movie movie = findMovie(isan);
         if(movie != null) {
             movie.play();
