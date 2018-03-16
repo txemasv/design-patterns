@@ -14,6 +14,7 @@ The project is a personal library where I'm including some important Java Design
 | Structural Patterns                                 | UnitTest                                            |
 | --------------------------------------------------- | ---------------------------------------------------:|
 | [Facade](src/main/java/structural/facade)           | [FacadeTest](src/test/java/structural/facade)       |
+| [Adapter](src/main/java/structural/adapter)         | [AdapterTest](src/test/java/structural/adapter)     |
 
 | Behavioral Patterns                                 | UnitTest                                            |
 | --------------------------------------------------- | ---------------------------------------------------:|
