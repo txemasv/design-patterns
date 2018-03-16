@@ -3,8 +3,8 @@ package creational.factory;
 public class Man implements Human {
     private char gen;
 
-    public Man(char gen) {
-        this.gen = gen;
+    public Man() {
+        this.gen = 'x';
     }
 
     @Override

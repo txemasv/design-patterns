@@ -4,9 +4,9 @@ public class Woman implements Human {
     private char genA;
     private char genB;
 
-    public Woman(char genA, char genB) {
-        this.genA = genA;
-        this.genB = genB;
+    public Woman() {
+        this.genA = 'x';
+        this.genB = 'y';
     }
 
     @Override

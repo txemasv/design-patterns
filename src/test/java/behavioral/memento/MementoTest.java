@@ -24,7 +24,7 @@ public class MementoTest {
         careTaker.addMemento(originator.storeInMemento());
         current++;
 
-        Memory myMemory2 = new Memory("first kiss", "When I was 11 a girl of my school kiss me, I felt so happy.");
+        Memory myMemory2 = new Memory("first kiss", "I was 11 and a girl of my school kiss me, I felt so happy.");
         originator.setMemory(myMemory2);
         careTaker.addMemento(originator.storeInMemento());
         current++;
