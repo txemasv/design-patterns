@@ -7,35 +7,23 @@ import static org.junit.Assert.assertEquals;
 
 public class MementoTest {
 
-    private int current;
-
-    @Before
-    public void setUp() {
-        current = -1;
-    }
-
     @Test
     public void restoreMemento_Should_Return_BackState_Of_Memory() {
         CareTaker careTaker = new CareTaker();
         Originator originator = new Originator();
+        int current = -1;
 
-        Memory myMemory1 = new Memory("6th anniversary", "I had a party with my friends and they offer me 'The Steadfast Tin Soldier' book.");
-        originator.setMemory(myMemory1);
-        careTaker.addMemento(originator.storeInMemento());
+        Memory myMemory1 = new Memory("6th anniversary", "I had a party with my friends and they ...");
+        careTaker.add(myMemory1);
         current++;
 
-        Memory myMemory2 = new Memory("first kiss", "I was 11 and a girl of my school kiss me, I felt so happy.");
-        originator.setMemory(myMemory2);
-        careTaker.addMemento(originator.storeInMemento());
+        Memory myMemory2 = new Memory("first kiss", "I was 11 and a girl of my school ...");
+        careTaker.add(myMemory2);
         current++;
 
-        Memory savedMemory = originator.restoreFromMemento(careTaker.getMemento(undo()));
+        Memory savedMemory = originator.restoreFromMemento(careTaker.getMemento(--current));
 
         assertEquals(myMemory1, savedMemory);
     }
 
-    private int undo() {
-        if (current > 0) current--;
-        return current;
-    }
 }

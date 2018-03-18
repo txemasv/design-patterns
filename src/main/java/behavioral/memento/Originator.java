@@ -13,7 +13,7 @@ public class Originator {
         return memory;
     }
 
-    public void setMemory(Memory memory) {
+    public void set(Memory memory) {
         this.memory = memory;
     }
 }

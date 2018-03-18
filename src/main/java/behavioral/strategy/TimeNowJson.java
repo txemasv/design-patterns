@@ -4,11 +4,11 @@ import java.time.Clock;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class JsonTimeNow implements TimeNow {
+public class TimeNowJson implements TimeNow {
 
     private Clock clock;
 
-    JsonTimeNow(Clock clock) {
+    TimeNowJson(Clock clock) {
         this.clock = clock;
     }
 

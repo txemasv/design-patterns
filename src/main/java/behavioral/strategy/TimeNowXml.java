@@ -4,11 +4,11 @@ import java.time.Clock;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class XmlTimeNow implements TimeNow {
+public class TimeNowXml implements TimeNow {
 
     private Clock clock;
 
-    XmlTimeNow(Clock clock) {
+    TimeNowXml(Clock clock) {
         this.clock = clock;
     }
 

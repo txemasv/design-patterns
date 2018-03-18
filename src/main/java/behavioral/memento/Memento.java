@@ -4,8 +4,8 @@ public class Memento {
 
     private Memory memory;
 
-    public Memento(Memory memory) {
-        this.memory = memory;
+    public Memento(Memory memoryToSave) {
+        this.memory = memoryToSave;
     }
 
     public Memory getSavedMemory() {

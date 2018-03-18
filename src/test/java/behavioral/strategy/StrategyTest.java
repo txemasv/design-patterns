@@ -25,17 +25,17 @@ public class StrategyTest {
 
     @Test
     public void output_Should_Return_Date_In_JsonFormat() {
-        JsonTimeNow json = new JsonTimeNow(clock);
-        System.out.println(json.output());
+        TimeNow now = new TimeNowJson(clock);
+        System.out.println(now.output());
         String outputShouldReturn = "{\"date\":\"" + date + "\", \"time\":\"" + time + "\"}";
-        assertEquals(outputShouldReturn, json.output());
+        assertEquals(outputShouldReturn, now.output());
     }
 
     @Test
     public void output_Should_Return_Date_In_XmlFormat() {
-        XmlTimeNow xml = new XmlTimeNow(clock);
-        System.out.println(xml.output());
+        TimeNow now = new TimeNowXml(clock);
+        System.out.println(now.output());
         String outputShouldReturn = "<now><time>" + date + "</time><date>" + time + "</date></now>";
-        assertEquals(outputShouldReturn, xml.output());
+        assertEquals(outputShouldReturn, now.output());
     }
 }
