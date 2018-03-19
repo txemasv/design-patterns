@@ -1,7 +1,6 @@
 package structural.adapter;
 
-public class Wifi {
-
+public class Player implements WifiTV {
     private boolean isConnected = false;
 
     public void connect() {
@@ -18,4 +17,10 @@ public class Wifi {
     public boolean isConnected() {
         return isConnected;
     }
+
+    @Override
+    public void playContent() {
+        System.out.println("Playing content");
+    }
+
 }

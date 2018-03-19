@@ -8,10 +8,10 @@ public class AdapterTest {
 
     @Test
     public void playTV_Using_Adapter_Should_Connect_To_WIFI() {
-        PlugAdapter adapter = new PlugAdapter();
+        WifiTVAdapter adapter = new WifiTVAdapter();
         adapter.playTV();
 
-        boolean isConnectedToWIFI = adapter.getWifi().isConnected();
+        boolean isConnectedToWIFI = adapter.getConnection().isConnected();
         assertEquals(true, isConnectedToWIFI);
     }
 }
