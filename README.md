@@ -7,9 +7,9 @@ The project is a personal library where I'm including some important Java Design
 | Creational Patterns                                 | UnitTest                                                |
 | --------------------------------------------------- | -------------------------------------------------------:|
 | [Singleton](src/main/java/creational/singleton)     | [SingletonTest](src/test/java/creational/singleton)     |
-| [Prototype](src/main/java/creational/prototype)     | [PrototypeTest](src/test/java/creational/singleton)     |
-| [Builder](src/main/java/creational/builder)         | [BuilderTest](src/test/java/creational/singleton)       |
-| [Factory](src/main/java/creational/factory)         | [FactoryTest](src/test/java/creational/singleton)       |
+| [Prototype](src/main/java/creational/prototype)     | [PrototypeTest](src/test/java/creational/prototype)     |
+| [Builder](src/main/java/creational/builder)         | [BuilderTest](src/test/java/creational/builder)       |
+| [Factory](src/main/java/creational/factory)         | [FactoryTest](src/test/java/creational/factory)       |
 | [FactoryMethod](src/main/java/creational/factory_method)  | [FactoryMethodTest](src/test/java/creational/factory_method)  |
 | [AbstractFactory](src/main/java/creational/abstract_factory)| [AbstractFactoryTest](src/test/java/creational/abstract_factory)|
 
